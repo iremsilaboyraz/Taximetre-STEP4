@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Taxi {
+    public static void main(String[] args){
+        double km,ücret;
+        Scanner input=new Scanner(System.in);
+        System.out.printf("Mesafe giriniz:");
+        km=input.nextDouble();
+        ücret=km*2.20+10;
+        ücret=ücret<=20? 20:ücret;
+        System.out.println("Toplam tutar:"+ücret);
+    }
+}
